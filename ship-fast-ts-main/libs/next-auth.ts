@@ -51,7 +51,7 @@ export const authOptions: NextAuthOptionsExtended = {
   // Requires a MongoDB database. Set MONOGODB_URI env variable.
   // Learn more about the model type: https://next-auth.js.org/v3/adapters/models
   // 暂时禁用数据库适配器，使用JWT模式
-  // ...(connectMongo && { adapter: MongoDBAdapter(connectMongo) }),
+  ...(connectMongo && { adapter: MongoDBAdapter(connectMongo) }),
 
   callbacks: {
     session: async ({ session, token }) => {

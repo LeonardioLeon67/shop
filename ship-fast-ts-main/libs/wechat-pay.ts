@@ -82,7 +82,7 @@ export class WechatPayService {
   // 创建统一下单
   async createUnifiedOrder(params: CreateOrderParams): Promise<{success: boolean; data?: any; error?: string}> {
     try {
-      const orderParams = {
+      const orderParams: Record<string, any> = {
         appid: this.config.appId,
         mch_id: this.config.mchId,
         nonce_str: this.generateNonceStr(),
@@ -179,7 +179,7 @@ export class WechatPayService {
   // 查询订单
   async queryOrder(orderNo: string): Promise<{success: boolean; data?: any; error?: string}> {
     try {
-      const queryParams = {
+      const queryParams: any = {
         appid: this.config.appId,
         mch_id: this.config.mchId,
         out_trade_no: orderNo,

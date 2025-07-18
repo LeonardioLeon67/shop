@@ -78,7 +78,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
         serviceType: "chatgpt",
         planDetails: {
           duration: "1个月",
-          features: ["包含免费版的所有功能", "提供更高的消息限制、文件上传、先进的数据分析和图像生成", "访问深度研究、多个推理模型（o4-mini、o4-mini-high 和 o3），以及GPT-4.5的研究预览版", "创建和使用任务、项目以及自定义GPT", "有限访问Sora视频生成"],
+          features: ["提供更高的消息限制、文件上传、先进的数据分析和图像生成", "访问深度研究、多个推理模型（o4-mini、o4-mini-high 和 o3），以及GPT-4.5的研究预览版", "创建和使用任务、项目以及自定义GPT", "有限访问Sora视频生成"],
           originalPrice: 200
         }
       },
@@ -104,7 +104,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
         serviceType: "claude",
         planDetails: {
           duration: "1个月",
-          features: ["比我们的免费层提供的使用量多5倍", "提前体验Claude的新功能"],
+          features: ["使用量是免费版的5倍", "提前体验Claude的新功能"],
           originalPrice: 140
         }
       },
@@ -117,7 +117,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
         serviceType: "claude",
         planDetails: {
           duration: "1个月",
-          features: ["在高流量时段优先访问", "提前体验Claude的新功能", "比Pro多5倍的使用量"],
+          features: ["在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的5倍"],
           originalPrice: 700
         }
       },
@@ -130,7 +130,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
         serviceType: "claude",
         planDetails: {
           duration: "1个月",
-          features: ["在高流量时段优先访问", "提前体验Claude的新功能", "比Pro多20倍的使用量"],
+          features: ["在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的20倍"],
           originalPrice: 1400
         }
       },
@@ -143,7 +143,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
         serviceType: "grok",
         planDetails: {
           duration: "1个月",
-          features: ["增加对Grok4的访问", "增加对Grok3的访问", "上下文记忆128,000个令牌", "具备视觉的语音功能", "包含基础版的所有内容"],
+          features: ["增加对Grok4的访问", "增加对Grok3的访问", "上下文记忆128,000个令牌", "具备视觉的语音功能"],
           originalPrice: 280
         }
       },
@@ -223,7 +223,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
     return "请输入您的账号信息";
   };
 
-  const getServiceInstructions = () => {
+  const getServiceInstructions = (): null => {
     return null;
   };
 

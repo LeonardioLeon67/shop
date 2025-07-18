@@ -50,7 +50,7 @@ export class AlipayService {
 
     // RSA2签名
     const sign = crypto.createSign('RSA-SHA256');
-    sign.update(signString, this.charset);
+    sign.update(signString, this.charset as BufferEncoding);
     return sign.sign(this.config.privateKey, 'base64');
   }
 
@@ -75,13 +75,13 @@ export class AlipayService {
 
     // 验证签名
     const verify = crypto.createVerify('RSA-SHA256');
-    verify.update(signString, this.charset);
+    verify.update(signString, this.charset as BufferEncoding);
     return verify.verify(this.config.alipayPublicKey, sign, 'base64');
   }
 
   // 构建请求参数
   private buildRequestParams(bizContent: any, method: string): Record<string, any> {
-    const params = {
+    const params: Record<string, any> = {
       app_id: this.config.appId,
       method,
       charset: this.charset,

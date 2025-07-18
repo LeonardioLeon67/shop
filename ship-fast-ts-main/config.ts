@@ -3,7 +3,7 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "闪电充",
+  appName: "浣熊订阅",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "专业的Netflix和ChatGPT代充服务平台，快速安全的虚拟产品代充服务。",

@@ -1,0 +1,24 @@
+
+> ship-fast-code@0.1.0 dev
+> next dev -H 0.0.0.0
+
+   ▲ Next.js 14.1.4
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+   - Environments: .env.local
+
+ ✓ Ready in 5.8s
+ ○ Compiling / ...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+🌼   daisyUI 4.10.1
+├─ ✔︎ 2 themes added		https://daisyui.com/docs/themes
+╰─ ❤︎ Support daisyUI project:	https://opencollective.com/daisyui
+
+ ✓ Compiled / in 25.8s (643 modules)
+ ✓ Compiled in 3.6s (308 modules)
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 3s (561 modules)
+ ✓ Compiled in 8.8s (869 modules)

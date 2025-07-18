@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+html,
+body {
+  scroll-behavior: smooth !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: #374151 !important;
+  font-weight: 400;
+}
+
+* {
+  color: #374151 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+/* 浅蓝色标题 */
+.text-yellow-title {
+  color: #3B82F6 !important;
+}
+
+/* 透明标签页 */
+.tabs-boxed {
+  background-color: transparent !important;
+}
+
+.tab {
+  background-color: transparent !important;
+}
+
+/* 鼠标悬停下划线 */
+.tab:hover {
+  text-decoration: underline;
+}
+
+/* 修改所有模块为blue-200颜色 */
+.btn-primary {
+  background-color: #BFDBFE !important;
+  border-color: #BFDBFE !important;
+  color: #374151 !important;
+}
+
+.btn-primary:hover {
+  background-color: #93C5FD !important;
+  border-color: #93C5FD !important;
+  color: #374151 !important;
+}
+
+.badge-primary {
+  background-color: #BFDBFE !important;
+  border-color: #BFDBFE !important;
+  color: #374151 !important;
+}
+
+.text-primary {
+  color: #6B7280 !important;
+}
+
+.bg-primary {
+  background-color: #BFDBFE !important;
+}
+
+.border-primary {
+  border-color: #BFDBFE !important;
+}
+
+.tab-active {
+  background-color: #BFDBFE !important;
+  border-color: #BFDBFE !important;
+  color: #374151 !important;
+}
+
+.radio-primary:checked {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+/* 修改卡片和背景为白色 */
+.card {
+  background-color: #FFFFFF !important;
+}
+
+.bg-base-100 {
+  background-color: #FFFFFF !important;
+}
+
+.bg-base-200 {
+  background-color: #FFFFFF !important;
+}
+
+body {
+  background-color: #FFFFFF !important;
+}
+
+/* It makes the HTML progress bar filling smooth when value change. */
+progress::-webkit-progress-value {
+  transition: 0.6s width ease-out;
+}
+
+@layer base {
+  .btn-gradient {
+    @apply !bg-gradient !bg-[length:300%_300%] hover:saturate-[1.2] shadow duration-100 !border-0 !border-transparent !bg-transparent animate-shimmer disabled:!bg-none disabled:!bg-gray-500/30  !text-white;
+  }
+  .btn {
+    @apply !capitalize;
+  }
+}

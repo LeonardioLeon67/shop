@@ -1,0 +1,21 @@
+正在启动生产环境网站...
+停止旧进程...
+启动生产服务器...
+
+> ship-fast-code@0.1.0 start
+> next start
+
+   ▲ Next.js 14.1.4
+   - Local:        http://localhost:3000
+
+Error: ENOENT: no such file or directory, open '/root/shop/ship-fast-ts-main/.next/BUILD_ID'
+    at async open (node:internal/fs/promises:639:25)
+    at async Object.readFile (node:internal/fs/promises:1243:14)
+    at async setupFsCheck (/root/shop/ship-fast-ts-main/node_modules/next/dist/server/lib/router-utils/filesystem.js:145:19)
+    at async initialize (/root/shop/ship-fast-ts-main/node_modules/next/dist/server/lib/router-server.js:62:23)
+    at async Server.<anonymous> (/root/shop/ship-fast-ts-main/node_modules/next/dist/server/lib/start-server.js:247:36) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/root/shop/ship-fast-ts-main/.next/BUILD_ID'
+}

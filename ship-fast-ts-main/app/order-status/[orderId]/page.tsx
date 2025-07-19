@@ -303,11 +303,11 @@ export default function OrderStatusPage({ params }: { params: { orderId: string 
 
             {/* 操作按钮 */}
             <div className="card-actions justify-center mt-6">
-              <Link href="/products" className="btn btn-outline">
+              <Link href="/products" className="btn btn-outline font-bold">
                 继续购买
               </Link>
               {order.paymentStatus === 'paid' && order.rechargeInfo.rechargeStatus === 'completed' && (
-                <Link href="/products" className="btn btn-primary">
+                <Link href="/products" className="btn btn-primary font-bold">
                   再次购买
                 </Link>
               )}

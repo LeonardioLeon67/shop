@@ -1,0 +1,20 @@
+{"message":"   ▲ Next.js 14.1.4\n","timestamp":"2025-07-19T04:44:17","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"   - Local:        http://localhost:3000\n","timestamp":"2025-07-19T04:44:17","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"\n","timestamp":"2025-07-19T04:44:17","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":" ✓ Ready in 1267ms\n","timestamp":"2025-07-19T04:44:18","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"⚠️ MONGODB_URI missing from .env\n","timestamp":"2025-07-19T04:47:51","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"   ▲ Next.js 14.1.4\n","timestamp":"2025-07-19T05:12:41","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"   - Local:        http://localhost:3000\n","timestamp":"2025-07-19T05:12:41","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"\n","timestamp":"2025-07-19T05:12:41","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":" ✓ Ready in 1384ms\n","timestamp":"2025-07-19T05:12:42","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"⚠️ MONGODB_URI missing from .env\n","timestamp":"2025-07-19T05:17:38","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"   ▲ Next.js 14.1.4\n","timestamp":"2025-07-19T05:21:31","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"   - Local:        http://localhost:3000\n","timestamp":"2025-07-19T05:21:31","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"\n","timestamp":"2025-07-19T05:21:31","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":" ✓ Ready in 1473ms\n","timestamp":"2025-07-19T05:21:32","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"⚠️ MONGODB_URI missing from .env\n","timestamp":"2025-07-19T05:21:54","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"   ▲ Next.js 14.1.4\n","timestamp":"2025-07-19T05:27:20","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"   - Local:        http://localhost:3000\n","timestamp":"2025-07-19T05:27:20","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"\n","timestamp":"2025-07-19T05:27:20","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":" ✓ Ready in 1716ms\n","timestamp":"2025-07-19T05:27:21","type":"out","process_id":0,"app_name":"shop-website"}
+{"message":"⚠️ MONGODB_URI missing from .env\n","timestamp":"2025-07-19T05:27:45","type":"out","process_id":0,"app_name":"shop-website"}

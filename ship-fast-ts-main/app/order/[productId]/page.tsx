@@ -91,7 +91,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
         serviceType: "chatgpt",
         planDetails: {
           duration: "1个月",
-          features: ["无限访问所有推理模型和GPT-4o", "无限访问高级语音", "访问GPT-4.5和Operator的研究预览版", "访问o3 Pro模式，利用更多计算资源为最难的问题提供最佳答案", "扩展访问Sora视频生成", "访问Codex agent的研究预览版"],
+          features: ["访问所有推理模型和GPT-4o", "访问高级语音", "访问GPT-4.5和Operator的研究预览版", "访问o3 Pro模式，利用更多计算资源为最难的问题提供最佳答案", "扩展访问Sora视频生成", "访问Codex agent的研究预览版"],
           originalPrice: 2000
         }
       },
@@ -104,7 +104,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
         serviceType: "claude",
         planDetails: {
           duration: "1个月",
-          features: ["使用量是免费版的5倍", "提前体验Claude的新功能"],
+          features: ["Claude Code已包含在Pro中，使用Claude Sonnet 4", "使用量是免费版的5倍", "提前体验Claude的新功能"],
           originalPrice: 140
         }
       },
@@ -117,7 +117,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
         serviceType: "claude",
         planDetails: {
           duration: "1个月",
-          features: ["在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的5倍"],
+          features: ["Claude Code已包含在你的Max 5x，使用Claude Sonnet 4和Claude Opus 4", "在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的5倍"],
           originalPrice: 700
         }
       },
@@ -130,7 +130,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
         serviceType: "claude",
         planDetails: {
           duration: "1个月",
-          features: ["在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的20倍"],
+          features: ["Claude Code已包含在你的Max 20x，使用Claude Sonnet 4和Claude Opus 4", "在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的20倍"],
           originalPrice: 1400
         }
       },
@@ -349,7 +349,7 @@ export default function OrderPage({ params }: { params: { productId: string } })
 
                 <button
                   type="submit"
-                  className={`btn btn-primary w-full ${submitting ? "loading" : ""}`}
+                  className={`btn btn-primary w-full font-bold ${submitting ? "loading" : ""}`}
                   disabled={submitting}
                 >
                   {submitting ? "处理中..." : "立即支付"}

@@ -58,7 +58,7 @@ export default function HomePage() {
             serviceType: "chatgpt",
             planDetails: {
               duration: "1个月",
-              features: ["无限访问所有推理模型和GPT-4o", "无限访问高级语音", "扩展访问深度研究，进行多步骤在线研究以处理复杂任务", "访问GPT-4.5和Operator", "访问o3 Pro模式，利用更多计算资源为最难的问题提供最佳答案", "扩展访问Sora视频生成", "访问Codex agent"],
+              features: ["访问所有推理模型和GPT-4o", "访问高级语音", "扩展访问深度研究，进行多步骤在线研究以处理复杂任务", "访问GPT-4.5和Operator", "访问o3 Pro模式，利用更多计算资源为最难的问题提供最佳答案", "扩展访问Sora视频生成", "访问Codex agent"],
               originalPrice: 2000
             },
             isActive: true
@@ -73,7 +73,7 @@ export default function HomePage() {
             serviceType: "claude",
             planDetails: {
               duration: "1个月",
-              features: ["使用量是免费版的5倍", "提前体验Claude的新功能"],
+              features: ["Claude Code已包含在Pro中，使用Claude Sonnet 4", "使用量是免费版的5倍", "提前体验Claude的新功能"],
               originalPrice: 140
             },
             isActive: true
@@ -88,7 +88,7 @@ export default function HomePage() {
             serviceType: "claude",
             planDetails: {
               duration: "1个月",
-              features: ["在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的5倍"],
+              features: ["Claude Code已包含在你的Max 5x，使用Claude Sonnet 4和Claude Opus 4", "在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的5倍"],
               originalPrice: 700
             },
             isActive: true
@@ -103,7 +103,7 @@ export default function HomePage() {
             serviceType: "claude",
             planDetails: {
               duration: "1个月",
-              features: ["在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的20倍"],
+              features: ["Claude Code已包含在你的Max 20x，使用Claude Sonnet 4和Claude Opus 4", "在高流量时段优先访问", "提前体验Claude的新功能", "使用量是Pro版的20倍"],
               originalPrice: 1400
             },
             isActive: true
@@ -269,7 +269,12 @@ export default function HomePage() {
         {/* 产品列表 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProducts.map((product) => (
-            <div key={product._id} className="card bg-base-200 shadow-xl hover:shadow-2xl transition-shadow flex flex-col h-full rounded-lg">
+            <div key={product._id} className={`card bg-base-200 shadow-xl hover:shadow-2xl transition-shadow flex flex-col h-full rounded-lg relative ${product._id === '5' ? 'border-2 border-blue-200' : ''}`}>
+              {product._id === '5' && (
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-200 text-gray-800 px-3 py-1 rounded text-sm font-bold border border-blue-200">
+                  推荐
+                </div>
+              )}
               <div className="w-full flex justify-center pt-6 pb-2">
                 <div className="w-16 h-16 flex items-center justify-center overflow-visible">
                   {getServiceIcon(product.serviceType)}
@@ -297,7 +302,7 @@ export default function HomePage() {
                     ¥{product.price}
                   </div>
                   <Link href={`/order/${product._id}`}>
-                    <button className="btn bg-blue-200 hover:bg-blue-300 text-gray-500 border-blue-200 hover:border-blue-300 btn-sm font-normal font-mono">
+                    <button className="btn bg-blue-200 hover:bg-blue-300 text-gray-500 border-blue-200 hover:border-blue-300 btn-sm font-bold font-mono">
                       购买
                     </button>
                   </Link>

@@ -40,19 +40,19 @@ body {
 .btn-primary {
   background-color: #BFDBFE !important;
   border-color: #BFDBFE !important;
-  color: #374151 !important;
+  color: #1F2937 !important; /* 更深的灰色文字 */
 }
 
 .btn-primary:hover {
   background-color: #93C5FD !important;
   border-color: #93C5FD !important;
-  color: #374151 !important;
+  color: #1F2937 !important; /* 保持深色文字 */
 }
 
 .badge-primary {
   background-color: #BFDBFE !important;
   border-color: #BFDBFE !important;
-  color: #374151 !important;
+  color: #1F2937 !important; /* 更深的灰色文字 */
 }
 
 .text-primary {
@@ -73,9 +73,13 @@ body {
   color: #374151 !important;
 }
 
-.radio-primary:checked {
-  background-color: #000000 !important;
+.radio-primary {
   border-color: #000000 !important;
+}
+
+.radio-primary:checked {
+  background-color: #3B82F6 !important;
+  border-color: #3B82F6 !important;
 }
 
 /* 修改卡片和背景为白色 */

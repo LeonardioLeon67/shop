@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@400;600;700&family=Comfortaa:wght@400;700&family=Bubblegum+Sans&family=Baloo+2:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+html,
+body {
+  scroll-behavior: smooth !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: #374151 !important;
+  font-weight: 400;
+}
+
+* {
+  color: #374151 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+/* 主标题蓝色 - 覆盖全局颜色 */
+.title-blue {
+  color: #3B82F6 !important;
+}
+
+/* 可爱标题样式 */
+.cute-title {
+  font-family: 'Quicksand', 'Comfortaa', '幼圆', 'YouYuan', '微软雅黑', sans-serif !important;
+  color: #9333ea !important;
+  font-weight: 600 !important;
+  font-size: 3.5rem !important;
+  letter-spacing: 3px !important;
+  text-shadow: 2px 2px 4px rgba(147, 51, 234, 0.1) !important;
+  display: inline-block !important;
+  position: relative !important;
+  transition: all 0.3s ease !important;
+}
+
+.cute-title:hover {
+  transform: scale(1.05) !important;
+  text-shadow: 3px 3px 6px rgba(147, 51, 234, 0.15) !important;
+}
+
+
+/* 简洁的标题容器 */
+.cute-title-wrapper {
+  position: relative !important;
+  display: inline-block !important;
+  padding: 0 !important;
+}
+
+
+/* 小号可爱标题样式 */
+.cute-title-small {
+  font-family: 'Quicksand', 'Comfortaa', '幼圆', 'YouYuan', '微软雅黑', sans-serif !important;
+  color: #9333ea !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  text-shadow: 1px 1px 2px rgba(147, 51, 234, 0.1) !important;
+}
+
+/* 浅蓝色标题 */
+.text-yellow-title {
+  color: #3B82F6 !important;
+}
+
+/* 橙色标题 - 拼车模块背景色 */
+.text-orange-main {
+  color: #FB923C !important;
+}
+
+/* 确保导航标签保持蓝色 */
+.tab.text-yellow-title,
+.tab.text-yellow-title span,
+.tab.text-yellow-title * {
+  color: #3B82F6 !important;
+}
+
+/* 透明标签页 */
+.tabs-boxed {
+  background-color: transparent !important;
+}
+
+.tab {
+  background-color: transparent !important;
+}
+
+/* 鼠标悬停下划线 */
+.tab:hover {
+  text-decoration: underline;
+}
+
+/* 修改所有模块为blue-200颜色 */
+.btn-primary {
+  background-color: #BFDBFE !important;
+  border-color: #BFDBFE !important;
+  color: #1F2937 !important; /* 更深的灰色文字 */
+}
+
+.btn-primary:hover {
+  background-color: #93C5FD !important;
+  border-color: #93C5FD !important;
+  color: #1F2937 !important; /* 保持深色文字 */
+}
+
+.badge-primary {
+  background-color: #BFDBFE !important;
+  border-color: #BFDBFE !important;
+  color: #1F2937 !important; /* 更深的灰色文字 */
+}
+
+.text-primary {
+  color: #6B7280 !important;
+}
+
+.bg-primary {
+  background-color: #BFDBFE !important;
+}
+
+.border-primary {
+  border-color: #BFDBFE !important;
+}
+
+.tab-active {
+  background-color: #BFDBFE !important;
+  border-color: #BFDBFE !important;
+  color: #374151 !important;
+}
+
+.radio-primary {
+  border-color: #000000 !important;
+}
+
+.radio-primary:checked {
+  background-color: #3B82F6 !important;
+  border-color: #3B82F6 !important;
+}
+
+/* 修改卡片和背景为白色 */
+.card {
+  background-color: #FFFFFF !important;
+}
+
+.bg-base-100 {
+  background-color: #FFFFFF !important;
+}
+
+.bg-base-200 {
+  background-color: #FFFFFF !important;
+}
+
+body {
+  background-color: #FFFFFF !important;
+}
+
+/* It makes the HTML progress bar filling smooth when value change. */
+progress::-webkit-progress-value {
+  transition: 0.6s width ease-out;
+}
+
+/* 用户名紫色样式 */
+.username-purple {
+  color: #9333ea !important;
+  font-family: 'Fredoka', 'Quicksand', 'Comic Sans MS', cursive !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: lowercase !important;
+  background: linear-gradient(135deg, #9333ea 0%, #c084fc 50%, #e879f9 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  padding: 2px 8px !important;
+  border-radius: 20px !important;
+  position: relative !important;
+}
+
+.username-purple::before {
+  content: '♥' !important;
+  position: absolute !important;
+  left: -15px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  font-size: 0.8em !important;
+  color: #f472b6 !important;
+}
+
+.username-purple:hover {
+  transform: scale(1.1) !important;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+@layer base {
+  .btn-gradient {
+    @apply !bg-gradient !bg-[length:300%_300%] hover:saturate-[1.2] shadow duration-100 !border-0 !border-transparent !bg-transparent animate-shimmer disabled:!bg-none disabled:!bg-gray-500/30  !text-white;
+  }
+  .btn {
+    @apply !capitalize;
+  }
+}
